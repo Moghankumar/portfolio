@@ -1,9 +1,12 @@
 interface HeroProps {
   onContactClick: () => void;
-  onExperienceClick: () => void;
+  // onExperienceClick: () => void;
 }
 
-export default function Hero({ onContactClick, onExperienceClick }: HeroProps) {
+export default function Hero({
+  onContactClick,
+  // onExperienceClick
+}: HeroProps) {
   return (
     <section
       id="home"

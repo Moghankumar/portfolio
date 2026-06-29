@@ -31,7 +31,7 @@ export default function App() {
 
         <Hero
           onContactClick={() => scrollTo("contact")}
-          onExperienceClick={() => scrollTo("experience")}
+          // onExperienceClick={() => scrollTo("experience")}
         />
 
         <Skills skills={skills} />
