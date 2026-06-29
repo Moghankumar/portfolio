@@ -1,3 +1,5 @@
+import { TypeAnimation } from "react-type-animation";
+
 import Resume from "../assets/MoghanKumar_Resume.pdf";
 
 interface HeroProps {
@@ -55,7 +57,12 @@ export default function Hero({
 "
           >
             {/* typing-text */}
-            Moghan Kumar A
+            <TypeAnimation
+              sequence={["Moghan Kumar A", 3000]}
+              speed={50}
+              repeat={Infinity}
+              cursor={true}
+            />
           </span>
         </h1>
 
