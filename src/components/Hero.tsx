@@ -1,3 +1,5 @@
+import Resume from "../assets/MoghanKumar_Resume.pdf";
+
 interface HeroProps {
   onContactClick: () => void;
   // onExperienceClick: () => void;
@@ -8,8 +10,9 @@ export default function Hero({
   // onExperienceClick
 }: HeroProps) {
   const onDownloadClick = () => {
+    const resumeUrl = new URL(Resume, import.meta.url).href;
     const link = document.createElement("a");
-    link.href = "/src/assets/MoghanKumar_Resume.pdf";
+    link.href = resumeUrl;
     link.download = "MoghanKumar_Resume.pdf";
     document.body.appendChild(link);
     link.click();
