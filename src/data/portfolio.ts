@@ -120,7 +120,7 @@ export const projects: Project[] = [
     title: "DRA – PIA & DS",
     description:
       "Enterprise data risk assessment platform for Standard Chartered Bank enabling regulatory compliance through structured Privacy Impact Assessment and Data Sovereignty workflows.",
-    tags: ["React.js", "Lit.js", "RBAC"],
+    tags: ["React.js", "Lit.js", "JavaScript", "TypeScript", "GraphQL"],
   },
   {
     id: "happyworkin",
@@ -146,7 +146,7 @@ export const projects: Project[] = [
     domain: "Healthcare",
     title: "ACHC",
     description:
-      "Healthcare accreditation management system built with Vue.js and Kendo UI handling complex approval workflows and compliance tracking.",
+      "Healthcare accreditation management platform that streamlines certification, compliance, assessments, and document management for healthcare organizations through secure and efficient digital workflows.",
     tags: ["Vue.js", "Kendo UI", "Vuex"],
   },
   {

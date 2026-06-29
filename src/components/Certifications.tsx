@@ -13,7 +13,7 @@ export default function Certifications({ certifications }: CertificationsProps) 
       bg-white dark:bg-dark-bg"
     >
       <div className="max-w-[900px] mx-auto">
-        <SectionHeader label="Credentials" title="Certifications & Education" />
+        <SectionHeader label="Credentials" title="Education & Certifications" />
 
         <div className="flex flex-col gap-4 max-w-[560px]">
           {certifications.map((cert, i) => (

@@ -46,7 +46,10 @@ export default function Navbar({ links, theme, onToggleTheme }: NavbarProps) {
           }`}
       >
         {/* Logo */}
-        <span className="text-[15px] font-semibold text-accent-light tracking-tight">
+        <span
+          className="text-[15px] font-semibold text-accent-light tracking-tight cursor-pointer hover:text-accent transition-colors duration-200"
+          onClick={() => handleNav("#home")}
+        >
           MK<span className="text-gray-400 dark:text-gray-600">.dev</span>
         </span>
 

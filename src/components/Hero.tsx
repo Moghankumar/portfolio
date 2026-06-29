@@ -7,6 +7,14 @@ export default function Hero({
   onContactClick,
   // onExperienceClick
 }: HeroProps) {
+  const onDownloadClick = () => {
+    const link = document.createElement("a");
+    link.href = "/src/assets/MoghanKumar_Resume.pdf";
+    link.download = "MoghanKumar_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <section
       id="home"
@@ -50,8 +58,8 @@ export default function Hero({
 
         {/* Role */}
         <p className="text-[clamp(18px,3vw,26px)] text-gray-500 dark:text-gray-400 mb-6 font-light">
-          <span className="text-gray-900 dark:text-white font-semibold">Frontend Developer</span>—
-          5.6+ Years of Experience
+          <span className="text-gray-900 dark:text-white font-semibold">Frontend Developer</span> —
+          5+ Years of Experience
         </p>
 
         {/* Description */}
@@ -65,7 +73,7 @@ export default function Hero({
         {/* CTAs */}
         <div className="flex flex-wrap gap-3 mb-12">
           <button
-            onClick={onContactClick}
+            onClick={onDownloadClick}
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl
               bg-accent text-white text-[14px] font-semibold
               hover:bg-accent-light transition-all duration-200
